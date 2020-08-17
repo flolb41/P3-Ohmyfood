@@ -1,0 +1,176 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&family=Oswald:wght@469&display=swap");
+/* variables */
+/* mixin */
+@media screen and (max-width: 640px) {
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  header {
+    background-color: #009973;
+    color: #ffc14d;
+    font-size: larger;
+    text-align: center;
+  }
+  header h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .message {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #009973;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    margin: 5% auto;
+    border-radius: 10px;
+    color: #ffc14d;
+  }
+
+  .container {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .container a {
+    text-decoration: none;
+  }
+  .container a .gradient {
+    background: linear-gradient(to right, #f00, #ff9933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .container a .menu1 {
+    background-color: #ffcccc;
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: 2px solid grey;
+    text-align: center;
+    padding-top: 30%;
+  }
+  .container a .menu1 h5 {
+    font-size: 1.3em;
+  }
+  .container a .menu1 .fab {
+    font-size: 2em;
+  }
+  .container a .menu2 {
+    grid-column: 2/2;
+    grid-row: 1;
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: 2px solid grey;
+    text-align: center;
+    padding-top: 30%;
+  }
+  .container a .menu2 h5 {
+    font-size: 1.3em;
+  }
+  .container a .menu2 .fab {
+    font-size: 2em;
+  }
+  .container a .menu3 {
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: 2px solid grey;
+    text-align: center;
+    padding-top: 30%;
+  }
+  .container a .menu3 h5 {
+    font-size: 1.3em;
+  }
+  .container a .menu3 .fab {
+    font-size: 2em;
+  }
+  .container a .menu3 h4 {
+    font-family: "Dancing Script", cursive;
+  }
+  .container a .menu3 h5 {
+    font-family: "Nanum Pen Script", cursive;
+    font-size: 1.5em;
+  }
+  .container a .menu4 {
+    grid-column: 2/2;
+    grid-row: 2;
+    width: 75%;
+    height: 90%;
+    margin: 10%;
+    border: 2px solid grey;
+    text-align: center;
+    padding-top: 30%;
+  }
+  .container a .menu4 h5 {
+    font-size: 1.3em;
+  }
+  .container a .menu4 .fab {
+    font-size: 2em;
+  }
+  .container a .menu4 h5 {
+    font-family: "Nanum Pen Script", cursive;
+    font-size: 1.5em;
+  }
+
+  .pagemenu1 {
+    margin: 30px;
+    text-align: center;
+    background-color: #ffcccc;
+  }
+  .pagemenu1 .divider {
+    display: table;
+    white-space: nowrap;
+    text-align: center;
+    padding: 20px;
+  }
+  .pagemenu1 .divider:before, .pagemenu1 .divider:after {
+    content: "";
+    display: table-cell;
+    width: 50%;
+    background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=) repeat-x left center;
+  }
+  .pagemenu1 ul {
+    margin: auto;
+    padding: 20px;
+  }
+  .pagemenu1 ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88em;
+  }
+  .pagemenu1 .foot {
+    margin: 30px 0;
+  }
+
+  footer {
+    color: #ffc14d;
+    background-color: #009973;
+    padding: 10px;
+  }
+  footer a {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #ffc14d;
+    text-decoration: none;
+  }
+  footer .mention {
+    float: left;
+  }
+  footer .email {
+    float: right;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

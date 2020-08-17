@@ -1,0 +1,19 @@
+{
+  "name": "p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "p3_oc",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flolb41/P3-Ohmyfood.git"
+  },
+  "author": "flolb41",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flolb41/P3-Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/flolb41/P3-Ohmyfood#readme"
+}
