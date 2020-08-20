@@ -1,0 +1,80 @@
+/* SEROLUTION MOBILE */
+
+@media screen and (max-width: 639px)
+{
+    header
+    {
+       background-color: $headbcolor;
+       color: $charcolor;
+       font-size: larger;
+       text-align: center;
+       h1{
+          font-family: $fontpage;
+         }
+    }
+    footer
+    {
+        color: $charcolor;
+        background-color: $headbcolor;
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        a
+        {
+            font-family: $fontpage;
+            color: $charcolor;
+            text-decoration: none;
+        }
+        .mention
+        {
+            float: left;
+        }
+        .email
+        {
+            float: right;
+        }
+    }
+}
+
+/* CHANGEMENT DE RESOLUTION */
+
+@media screen and (min-width: 640px) and (max-width: 1024px)
+{
+    header
+    {
+       background-color: $headbcolor;
+       color: $charcolor;
+       text-align: center;
+       h1{
+          font-family: $fontpage;
+          font-size: 4em;
+         }
+    }
+    footer
+    {
+        color: $charcolor;
+        background-color: $headbcolor;
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        a
+        {
+            font-family: $fontpage;
+            color: $charcolor;
+            text-decoration: none;
+            font-size: 2em;
+        }
+        .mention
+        {
+            float: left;
+        }
+        .email
+        {
+            float: right;
+        }
+    }
+}

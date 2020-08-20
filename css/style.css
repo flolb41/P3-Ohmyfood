@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&family=Oswald:wght@469&display=swap");
-@media screen and (max-width: 640px) {
-  body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
+/* SEROLUTION MOBILE */
+@media screen and (max-width: 639px) {
   header {
     background-color: #009973;
     color: #ffc14d;
@@ -20,31 +11,91 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
-  .message {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: #009973;
-    width: 50%;
-    align-self: center;
-    text-align: center;
-    margin: 5% auto;
-    border-radius: 10px;
+  footer {
     color: #ffc14d;
+    background-color: #009973;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  footer a {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #ffc14d;
+    text-decoration: none;
+  }
+  footer .mention {
+    float: left;
+  }
+  footer .email {
+    float: right;
+  }
+}
+/* CHANGEMENT DE RESOLUTION */
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  header {
+    background-color: #009973;
+    color: #ffc14d;
+    text-align: center;
+  }
+  header h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 4em;
+  }
+
+  footer {
+    color: #ffc14d;
+    background-color: #009973;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  footer a {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #ffc14d;
+    text-decoration: none;
+    font-size: 2em;
+  }
+  footer .mention {
+    float: left;
+  }
+  footer .email {
+    float: right;
+  }
+}
+/* RESOLUTION MOBILE */
+@media screen and (max-width: 639px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  * {
+    box-sizing: border-box;
   }
 
   .container {
-    height: 600px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
-  .container .menu, .container .menub {
-    padding: 50px;
+  .container .menu a, .container .menub a {
+    display: inline-block;
+    height: 300px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform: scale(1);
     opacity: 0.5;
-    transition: transform 1s ease-out;
-    margin: 0 auto;
   }
   .container .menu a:hover, .container .menub a:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
     opacity: 1;
   }
   .container .part {
@@ -56,111 +107,114 @@
   }
   .container .menu {
     background-color: #ffcccc;
-    border: 3px solid black;
-    width: 75%;
-    margin: 10%;
-    padding: 0;
   }
-  .container .menub {
-    border: 3px solid black;
-    width: 75%;
-    margin: 10%;
-    padding: 0;
+  .container .menu, .container .menub {
+    width: 40%;
+    height: 300px;
+    margin-top: 5%;
+    border: 2px solid black;
   }
-  .container a {
+  .container .menu a, .container .menub a {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    display: flex;
     text-decoration: none;
   }
-  .container a .gradient {
-    background: linear-gradient(to right, #f00, #ff9933);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .container a .menu1 {
-    grid-column: 1/2;
-    grid-row: 1;
+  .container .menu a .menu1, .container .menub a .menu1 {
     text-align: center;
   }
-  .container a .menu1 .part {
+  .container .menu a .menu1 .part, .container .menub a .menu1 .part {
     width: 100%;
     height: 100%;
     margin-top: 40%;
   }
-  .container a .menu1 h5 {
+  .container .menu a .menu1 h5, .container .menub a .menu1 h5 {
     font-size: 1.3em;
   }
-  .container a .menu1 .fab {
+  .container .menu a .menu1 .fab, .container .menub a .menu1 .fab {
     font-size: 2em;
     margin: 0;
   }
-  .container a .menu1 h4 {
+  .container .menu a .menu1 h4, .container .menub a .menu1 h4 {
     font-family: "Ma Shan Zheng", cursive;
   }
-  .container a .menu2 {
-    grid-column: 2/2;
-    grid-row: 1;
+  .container .menu a .gradient, .container .menub a .gradient {
+    background: linear-gradient(to right, #f00, #ff9933);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .container .menu a .menu2, .container .menub a .menu2 {
     text-align: center;
   }
-  .container a .menu2 .part {
+  .container .menu a .menu2 .part, .container .menub a .menu2 .part {
     width: 100%;
     height: 100%;
     margin-top: 40%;
   }
-  .container a .menu2 h5 {
+  .container .menu a .menu2 h5, .container .menub a .menu2 h5 {
     font-size: 1.3em;
   }
-  .container a .menu2 .fab {
+  .container .menu a .menu2 .fab, .container .menub a .menu2 .fab {
     font-size: 2em;
     margin: 0;
   }
-  .container a .menu3 {
-    grid-column: 1/2;
-    grid-row: 2;
+  .container .menu a .menu3, .container .menub a .menu3 {
     text-align: center;
   }
-  .container a .menu3 .part {
+  .container .menu a .menu3 .part, .container .menub a .menu3 .part {
     width: 100%;
     height: 100%;
     margin-top: 40%;
   }
-  .container a .menu3 h5 {
+  .container .menu a .menu3 h5, .container .menub a .menu3 h5 {
     font-size: 1.3em;
   }
-  .container a .menu3 .fab {
+  .container .menu a .menu3 .fab, .container .menub a .menu3 .fab {
     font-size: 2em;
     margin: 0;
   }
-  .container a .menu3 h4 {
+  .container .menu a .menu3 h4, .container .menub a .menu3 h4 {
     font-family: "Dancing Script", cursive;
   }
-  .container a .menu3 h5 {
+  .container .menu a .menu3 h5, .container .menub a .menu3 h5 {
     font-family: "Nanum Pen Script", cursive;
     font-size: 1.5em;
   }
-  .container a .menu4 {
-    grid-column: 2/2;
-    grid-row: 2;
+  .container .menu a .menu4, .container .menub a .menu4 {
     text-align: center;
   }
-  .container a .menu4 .part {
+  .container .menu a .menu4 .part, .container .menub a .menu4 .part {
     width: 100%;
     height: 100%;
     margin-top: 40%;
   }
-  .container a .menu4 h5 {
+  .container .menu a .menu4 h5, .container .menub a .menu4 h5 {
     font-size: 1.3em;
   }
-  .container a .menu4 .fab {
+  .container .menu a .menu4 .fab, .container .menub a .menu4 .fab {
     font-size: 2em;
     margin: 0;
   }
-  .container a .menu4 h5 {
+  .container .menu a .menu4 h5, .container .menub a .menu4 h5 {
     font-family: "Nanum Pen Script", cursive;
     font-size: 1.5em;
+  }
+
+  .soon {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: #009973;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    margin: 10% auto;
+    padding: 0;
+    border-radius: 10px;
+    color: #ffc14d;
+  }
+  .soon p {
+    padding: 0;
   }
 
   .pagemenu1 {
@@ -257,6 +311,7 @@
     font-size: 2em;
     color: blue;
     background: linear-gradient(to right, blue, white);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -297,22 +352,45 @@
     font-family: "Nanum Pen Script", cursive;
     font-size: 0.85em;
   }
+}
+/* CHANGEMENT DE RESOLUTION */
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-  footer {
-    color: #ffc14d;
-    background-color: #009973;
-    padding: 10px;
+  * {
+    box-sizing: border-box;
   }
-  footer a {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: #ffc14d;
-    text-decoration: none;
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
-  footer .mention {
-    float: left;
+  .container .menu, .container .menub {
+    width: 30%;
+    height: 300px;
+    margin: 50px;
+    border: 2px solid black;
+    text-align: center;
   }
-  footer .email {
-    float: right;
+  .container .menu .part, .container .menub .part {
+    width: 100%;
+    height: 100%;
+    margin-top: 40%;
+  }
+  .container .menu h5, .container .menub h5 {
+    font-size: 1.3em;
+  }
+  .container .menu .fab, .container .menub .fab {
+    font-size: 2em;
+    margin: 0;
   }
 }
 
