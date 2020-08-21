@@ -2,6 +2,7 @@
 @import "variables";
 @import "mixin";
 @import "headerfooter";
+@import "keyframes";
 
 /* RESOLUTION MOBILE */
 
@@ -51,12 +52,11 @@
                         font-family: 'Ma Shan Zheng', cursive;
                     }
                 }
-                .gradient
+                .fa-itunes-note
                 {
-                    background: linear-gradient(to right, #f00,#ff9933);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    color: transparent;
+                    background-image: linear-gradient(to right, #f00,#ff9933);
+                    
+                    
                 }
                 .menu2
                 {
@@ -99,11 +99,7 @@
         padding: 0;
         border-radius: 10px;
         color: $charcolor;
-        p
-        {
-            padding: 0;
-        }
-    }
+    }    
     .pagemenu1
     {
         @include pagemenu();
@@ -124,10 +120,7 @@
             font-size: 2em;
             color: $coltitm3;
             background: linear-gradient(to right, $coltitm3,white);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            
+            background-clip: border-box;  
         }
         article
         {
@@ -146,9 +139,9 @@
     }
 }
 
-/* CHANGEMENT DE RESOLUTION */
+/* LANDSCAPE */
 
-@media screen and (min-width: 640px) and (max-width: 1024px)
+@media screen and (min-width: 640px) and (max-width: 1280px)
 {
     body
     {
@@ -166,17 +159,29 @@
     .container
     {
         display: flex;
-        flex-flow: row wrap;
         justify-content: space-around;
+        margin-bottom: 5%;
         .menu, .menub
         {
             width: 30%;
             height: 300px;
-            margin: 50px;
+            margin: 4%;
             border: 2px solid black;
             @include menu();
             
             
         }
+    }
+    .soon
+    {
+        font-family: $fontpage;
+        background-color: $headbcolor;
+        width: 50%;
+        align-self: center;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        border-radius: 10px;
+        color: $charcolor;
     }
 }
