@@ -1,24 +1,14 @@
-/* SEROLUTION MOBILE */
+/* RESOLUTION MOBILE */
 
 @media screen and (max-width: 639px)
 {
-    header
-    {
-       background-color: $headbcolor;
-       color: $charcolor;
-       font-size: larger;
-       text-align: center;
-       h1{
-          font-family: $fontpage;
-         }
-    }
     footer
     {
         color: $charcolor;
         background-color: $headbcolor;
-        padding: 10px;
+        padding: 3%;
         width: 100%;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         a
@@ -45,28 +35,17 @@
         }
     }
 }
-
 /* CHANGEMENT DE RESOLUTION */
 
 @media screen and (min-width: 640px) and (max-width: 1280px)
 {
-    header
-    {
-       background-color: $headbcolor;
-       color: $charcolor;
-       text-align: center;
-       h1{
-          font-family: $fontpage;
-          font-size: 4em;
-         }
-    }
     footer
     {
         color: $charcolor;
         background-color: $headbcolor;
         padding: 10px;
         width: 100%;
-        position: absolute;
+        position: fixed;
         bottom: 0;
         left: 0;
         a

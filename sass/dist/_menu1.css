@@ -1,0 +1,71 @@
+/* RESOLUTION MOBILE */
+@media screen and (max-width: 639px) {
+  .pm {
+    padding-bottom: 10%;
+  }
+
+  .mainmenu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0% 5% 20% 5%;
+  }
+
+  main p {
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  .entrees, .plats, .desserts {
+    display: flex;
+    width: 100%;
+  }
+  .entrees p, .plats p, .desserts p {
+    width: 40%;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .divider {
+    width: 25%;
+    height: 5px;
+    margin: 25px 10% 0 10%;
+    align-content: space-around;
+    text-align: center;
+    border: 5px solid grey;
+  }
+
+  ul {
+    margin: auto;
+    padding: 0 20px 0 20px;
+  }
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+  }
+
+  .pm {
+    background-color: #ffcccc;
+    font-family: "Nanum Pen Script", cursive;
+  }
+  .pm .gradient {
+    font-size: 50px;
+    background: -webkit-gradient(linear, left bottom, right bottom, from(red), to(orange));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5%;
+  }
+  .pm h2 {
+    font-family: "Ma Shan Zheng", cursive;
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+  }
+  .pm .foot span {
+    font-family: "Ma Shan Zheng", cursive;
+    font-size: 1.5em;
+    color: black;
+  }
+}

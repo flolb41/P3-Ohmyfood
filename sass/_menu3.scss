@@ -1,0 +1,24 @@
+/* RESOLUTION MOBILE */
+
+@media screen and (max-width: 639px)
+{
+    .pagemenu3
+    {
+        @include pagemenu();
+        background-color: $colbkm3;
+        padding-top: 20px;
+        h2
+        {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2em;
+            color: $coltitm3;
+            background: linear-gradient(to right, $coltitm3,white);
+            background-clip: border-box;  
+        }
+        article
+        {
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 0.85em;
+        }   
+    }
+}

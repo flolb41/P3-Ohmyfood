@@ -1,0 +1,10 @@
+/* RESOLUTION MOBILE */
+
+@media screen and (max-width: 639px)
+{
+    @include pagemenu();
+    .pagemenu2
+    {
+        background-color: $colbkm2;
+    }
+}

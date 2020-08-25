@@ -4,51 +4,74 @@
     {
         width: 100%;
         height: 100%;
-        margin-top: 40%;
+    }
+    h4
+    {
+        font-size: 1.3em;
+        margin: 0;
     }
     h5
     {
-        font-size: 1.3em;
-    }
-    .fab
-    {
-        font-size: 2em;
-        margin: 0;
+        font-size: 1.5em;
+        margin-top: 10%;
     }
 }    
 @mixin pagemenu {
-    margin: 30px;
-    text-align: center;
+    .pm
+    {
+        padding-bottom: 10%;
+    }
+    .mainmenu
+    {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        margin: 0% 5% 20% 5%;
+    }
+    main p
+    {
+        text-align: center;
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .entrees, .plats, .desserts
+    {
+        display: flex;
+        width: 100%;
+        p
+        {
+            width: 40%;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    }
     .divider
     {
-        width: 100%;
-        display: table;
-        white-space: nowrap;
+        width: 25%;
+        height: 5px;
+        margin: 25px 10% 0 10%;
+        align-content: space-around;
         text-align: center; 
-        padding: 20px;
+        border: 5px solid grey;
     }
     ul
     {
         margin: auto;
-        padding: 20px;
+        padding: 0 20px 0 20px;
         li
         {
             display: flex;
             justify-content: space-between;
-            font-size: 0.88em;
+            font-size: 1em;
         }
     }
-    .foot
-    {
-        margin: 30px 0;
-    } 
 }
 @mixin partzoom {
     .menu, .menub
     { 
         a
         {
-            font-size: 1.1em;
+            font-size: 1.0em;
             display: inline-block;
             height: 300px;
             position: relative;
@@ -68,6 +91,6 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        padding-top: 30%;
+        padding-top: 40%;
     }
 }
