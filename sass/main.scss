@@ -8,9 +8,9 @@
 @import "menu2";
 @import "menu3";
 @import "menu4";
-/* RESOLUTION MOBILE */
+/* RESOLUTION */
 
-@media screen and (max-width: 639px)
+@media screen and (max-width: 1980px)
 {
     body
     {
@@ -46,6 +46,7 @@
         .menu, .menub
         {
             width: 40%;
+            max-width: 220px;
             height: 250px;
             margin-top: 5%;
             box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.548);
@@ -60,15 +61,15 @@
                 {
                     @include menu();
                     .gradient {
-                        font-size: 50px;
-                        background: -webkit-gradient(linear, left top, left bottom, from( red), to(orange));
+                        font-size: 40px;
+                        background: -webkit-gradient(linear, left bottom, right bottom, from( rgb(155, 13, 13)), to(rgb(255, 179, 0)));
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
                     h4
                     {
-                        font-family: 'Ma Shan Zheng';
-                        font-size: 1.5em;
+                        font-family: $fontm1;
+                        font-size: 1.8em;
                         color: black;
                     }
                     h5
@@ -89,7 +90,8 @@
                     @include menu();
                     h4
                     {
-                        font-family: 'Great Vibes', cursive;
+                        font-family: $fontm2;
+                        font-size: 0.8em;
                     }
                     h5
                     {
@@ -97,7 +99,12 @@
                     }
                 }
                 .menu3
-                {            
+                {       
+                    .degrade {
+                        background: -webkit-gradient(linear, left top, right bottom, from( blue), to( rgb(168, 168, 253)));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        }
                     @include menu();
                     h4
                     {
@@ -138,7 +145,6 @@
     }
     .soon
     {
-        font-size: 2em;
         font-family: $fontpage;
         background-color: $headbcolor;
         width: 50%;
@@ -147,10 +153,12 @@
         margin: 5%;
         border-radius: 10px;
         color: $charcolor;
+        max-height: 10%;
         h6
         {
             padding: 4%;
             margin: 0;
+            font-size: 150%;
         }
         .animsoon span 
         {
@@ -171,118 +179,13 @@
     }    
 }
 
-/* LANDSCAPE */
+/* Resolution de transition*/
 
-@media screen and (min-width: 640px) and (max-width: 1900px)
+@media screen and (min-width: 659px) and (max-width: 880px)
 {
-    body
-    {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    *
-    {
-        box-sizing: border-box;
-    }
     .container
     {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-bottom: 5%;
-        .menu, .menub
-        {
-            width: 30%;
-            height: 300px;
-            margin: 4%;
-            border: 2px solid black;
-            @include menu();
-            .menu1 
-                {
-                    @include menu();
-                    .gradient {
-                        font-size: 50px;
-                        background: -webkit-gradient(linear, left top, left bottom, from( red), to(orange));
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                    h4
-                    {
-                        font-family: 'Ma Shan Zheng', cursive;
-                        font-size: 1.8em;
-                    }
-                    h5
-                    {
-                        font-family: 'Nanum Pen Script', cursive;
-                        font-size: 2em;
-                    }
-                }
-                .menu2
-                {
-                    @include menu();
-                    h4
-                    {
-                        font-family: 'Great Vibes', cursive;
-                    }
-                    .degrade1 {
-                    background: -webkit-gradient(linear, left top, left bottom, from( red), to(orange));
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    }
-                    
-                }
-                .menu3
-                {            
-                    @include menu();
-                    h4
-                    {
-                        font-family: 'Dancing Script', cursive;
-                    }
-                    h5
-                    {
-                        font-family: 'Nanum Pen Script', cursive;
-                        font-size: 1.5em;
-                    }
-                }
-                .menu4
-                {
-                    .degrade2
-                    {
-                    font-size: 1.3em;
-                    background: -webkit-linear-gradient(white, #5a0000);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    }
-                    h4
-                    {
-                        font-family: 'Kaushan Script', cursive;
-
-                        
-                    }
-                    h5
-                    {
-                        font-family:'Nanum Pen Script', cursive;
-                        font-size: 1.5em;
-                    }
-                }
-            
-            
-        }
-    }
-    .soon
-    {
-        font-family: $fontpage;
-        background-color: $headbcolor;
-        width: 50%;
-        align-self: center;
-        text-align: center;
+        width: 600px;
         margin: auto;
-        padding: 0;
-        border-radius: 10px;
-        color: $charcolor;
     }
 }

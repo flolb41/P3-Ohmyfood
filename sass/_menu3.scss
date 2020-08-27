@@ -1,6 +1,6 @@
-/* RESOLUTION MOBILE */
+/* RESOLUTION */
 
-@media screen and (max-width: 639px)
+@media screen and (max-width: 1980px)
 {
     .pagemenu3
     {
@@ -12,13 +12,23 @@
             font-family: 'Dancing Script', cursive;
             font-size: 2em;
             color: $coltitm3;
-            background: linear-gradient(to right, $coltitm3,white);
-            background-clip: border-box;  
+            background: -webkit-gradient(linear, left top, right bottom, from( blue), to( rgb(178, 184, 247)));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        article
+        p
         {
-        font-family: 'Nanum Pen Script', cursive;
-        font-size: 0.85em;
-        }   
+            font-weight: normal;
+        }
+        .divider1
+        {
+            height: 7px;
+            width: 25%;
+        }
+        .divider2
+        {
+            height: 7px;
+            width: 25%;
+        }
     }
 }

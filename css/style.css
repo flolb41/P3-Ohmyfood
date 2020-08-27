@@ -44,36 +44,25 @@
     opacity: 0.3;
   }
 }
-/* RESOLUTION MOBILE */
-@media screen and (max-width: 639px) {
+/* RESOLUTION */
+@media screen and (max-width: 1980px) {
   header {
     background-color: #009973;
     color: #ffc14d;
     font-size: larger;
     text-align: center;
+    padding: 1%;
   }
   header h1 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
-/* CHANGEMENT DE RESOLUTION */
-@media screen and (min-width: 640px) and (max-width: 1280px) {
-  header {
-    background-color: #009973;
-    color: #ffc14d;
-    text-align: center;
-  }
-  header h1 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 4em;
-  }
-}
-/* RESOLUTION MOBILE */
-@media screen and (max-width: 639px) {
+/* RESOLUTION */
+@media screen and (max-width: 1980px) {
   footer {
     color: #ffc14d;
     background-color: #009973;
-    padding: 3%;
+    padding: 1.5%;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -85,6 +74,7 @@
     text-decoration: none;
   }
   footer .mention {
+    font-size: 130%;
     float: left;
   }
   footer .mention:hover {
@@ -92,6 +82,7 @@
     animation-iteration-count: infinite;
   }
   footer .email {
+    font-size: 130%;
     float: right;
   }
   footer .email:hover {
@@ -99,36 +90,12 @@
     animation-iteration-count: infinite;
   }
 }
-/* CHANGEMENT DE RESOLUTION */
-@media screen and (min-width: 640px) and (max-width: 1280px) {
-  footer {
-    color: #ffc14d;
-    background-color: #009973;
-    padding: 10px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-  }
-  footer a {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: #ffc14d;
-    text-decoration: none;
-    font-size: 2em;
-  }
-  footer .mention {
-    float: left;
-    animation: shake 0.5s;
-  }
-  footer .email {
-    float: right;
-    animation: shake 0.5s;
-  }
-}
-/* RESOLUTION MOBILE */
-@media screen and (max-width: 639px) {
+/* RESOLUTION */
+@media screen and (max-width: 1980px) {
   .pm {
-    padding-bottom: 10%;
+    margin: auto;
+    padding: 4% 0;
+    width: 450px;
   }
 
   .mainmenu {
@@ -144,38 +111,64 @@
     width: 100%;
   }
 
+  .divider1, .divider2 {
+    width: 27%;
+    height: 15px;
+    align-self: center;
+  }
+
+  .entrees {
+    margin-top: 6%;
+  }
+
   .entrees, .plats, .desserts {
     display: flex;
     width: 100%;
   }
   .entrees p, .plats p, .desserts p {
-    width: 40%;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
-  .divider {
-    width: 25%;
-    height: 5px;
-    margin: 25px 10% 0 10%;
-    align-content: space-around;
+    width: 80%;
+    text-decoration: none;
+    position: relative;
+    line-height: 20px;
+    padding: 0 10px;
     text-align: center;
-    border: 5px solid grey;
+    font-size: 0.9em;
+  }
+  .entrees p:after, .plats p:after, .desserts p:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 1s ease-in, background-color 1s ease-out;
+  }
+  .entrees p:hover:after, .plats p:hover:after, .desserts p:hover:after {
+    width: 100%;
+    left: 0%;
+    background: black;
   }
 
   ul {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px 0 20px;
+    margin: 0;
+    font-family: "Kalam", cursive;
   }
   ul li {
     display: flex;
     justify-content: space-between;
-    font-size: 1em;
+    font-size: 0.7em;
+    margin-bottom: 4%;
+    padding: 0 3%;
   }
 
   .pm {
     background-color: #ffccccc4;
-    font-family: "Nanum Pen Script", cursive;
+    font-family: "Kalam", cursive;
+  }
+  .pm p {
+    font-weight: bold;
   }
   .pm .gradient {
     font-size: 50px;
@@ -185,21 +178,29 @@
     margin-top: 5%;
   }
   .pm h2 {
-    font-family: "Ma Shan Zheng", cursive;
+    font-family: "Devonshire", cursive;
     font-size: 2em;
     font-weight: normal;
     margin: 0;
   }
+  .pm .divider1 {
+    margin-left: 25px;
+  }
+  .pm .divider2 {
+    margin-right: 25px;
+  }
   .pm .foot span {
-    font-family: "Ma Shan Zheng", cursive;
+    font-family: "Devonshire", cursive;
     font-size: 1.5em;
     color: black;
   }
 }
-/* RESOLUTION MOBILE */
-@media screen and (max-width: 639px) {
+/* RESOLUTION */
+@media screen and (max-width: 1980px) {
   .pm {
-    padding-bottom: 10%;
+    margin: auto;
+    padding: 4% 0;
+    width: 450px;
   }
 
   .mainmenu {
@@ -215,47 +216,95 @@
     width: 100%;
   }
 
+  .divider1, .divider2 {
+    width: 27%;
+    height: 15px;
+    align-self: center;
+  }
+
+  .entrees {
+    margin-top: 6%;
+  }
+
   .entrees, .plats, .desserts {
     display: flex;
     width: 100%;
   }
   .entrees p, .plats p, .desserts p {
-    width: 40%;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
-  .divider {
-    width: 25%;
-    height: 5px;
-    margin: 25px 10% 0 10%;
-    align-content: space-around;
+    width: 80%;
+    text-decoration: none;
+    position: relative;
+    line-height: 20px;
+    padding: 0 10px;
     text-align: center;
-    border: 5px solid grey;
+    font-size: 0.9em;
+  }
+  .entrees p:after, .plats p:after, .desserts p:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 1s ease-in, background-color 1s ease-out;
+  }
+  .entrees p:hover:after, .plats p:hover:after, .desserts p:hover:after {
+    width: 100%;
+    left: 0%;
+    background: black;
   }
 
   ul {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px 0 20px;
+    margin: 0;
+    font-family: "Kalam", cursive;
   }
   ul li {
     display: flex;
     justify-content: space-between;
-    font-size: 1em;
+    font-size: 0.7em;
+    margin-bottom: 4%;
+    padding: 0 3%;
   }
 
   .pagemenu2 {
     background-color: #fbeef7;
   }
+  .pagemenu2 .divider1, .pagemenu2 .divider2 {
+    width: 25%;
+    height: 10px;
+    align-self: center;
+    margin: 0;
+  }
+  .pagemenu2 h2 {
+    padding-top: 3%;
+    font-family: "Croissant One", cursive;
+    font-size: 2em;
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff7b00), to(#8747bb));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .pagemenu2 .entrees, .pagemenu2 .color1 {
+    color: #ff7b00;
+  }
+  .pagemenu2 .plats, .pagemenu2 .color2 {
+    color: #902d53;
+  }
+  .pagemenu2 .desserts, .pagemenu2 .color3 {
+    color: #8747bb;
+  }
 }
-/* RESOLUTION MOBILE */
-@media screen and (max-width: 639px) {
+/* RESOLUTION */
+@media screen and (max-width: 1980px) {
   .pagemenu3 {
     background-color: #f2f2f2;
     padding-top: 20px;
   }
   .pagemenu3 .pm {
-    padding-bottom: 10%;
+    margin: auto;
+    padding: 4% 0;
+    width: 450px;
   }
   .pagemenu3 .mainmenu {
     display: flex;
@@ -268,48 +317,80 @@
     font-size: 1.5em;
     width: 100%;
   }
+  .pagemenu3 .divider1, .pagemenu3 .divider2 {
+    width: 27%;
+    height: 15px;
+    align-self: center;
+  }
+  .pagemenu3 .entrees {
+    margin-top: 6%;
+  }
   .pagemenu3 .entrees, .pagemenu3 .plats, .pagemenu3 .desserts {
     display: flex;
     width: 100%;
   }
   .pagemenu3 .entrees p, .pagemenu3 .plats p, .pagemenu3 .desserts p {
-    width: 40%;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  .pagemenu3 .divider {
-    width: 25%;
-    height: 5px;
-    margin: 25px 10% 0 10%;
-    align-content: space-around;
+    width: 80%;
+    text-decoration: none;
+    position: relative;
+    line-height: 20px;
+    padding: 0 10px;
     text-align: center;
-    border: 5px solid grey;
+    font-size: 0.9em;
+  }
+  .pagemenu3 .entrees p:after, .pagemenu3 .plats p:after, .pagemenu3 .desserts p:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 1s ease-in, background-color 1s ease-out;
+  }
+  .pagemenu3 .entrees p:hover:after, .pagemenu3 .plats p:hover:after, .pagemenu3 .desserts p:hover:after {
+    width: 100%;
+    left: 0%;
+    background: black;
   }
   .pagemenu3 ul {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px 0 20px;
+    margin: 0;
+    font-family: "Kalam", cursive;
   }
   .pagemenu3 ul li {
     display: flex;
     justify-content: space-between;
-    font-size: 1em;
+    font-size: 0.7em;
+    margin-bottom: 4%;
+    padding: 0 3%;
   }
   .pagemenu3 h2 {
     font-family: "Dancing Script", cursive;
     font-size: 2em;
     color: blue;
-    background: linear-gradient(to right, blue, white);
-    background-clip: border-box;
+    background: -webkit-gradient(linear, left top, right bottom, from(blue), to(#b2b8f7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  .pagemenu3 article {
-    font-family: "Nanum Pen Script", cursive;
-    font-size: 0.85em;
+  .pagemenu3 p {
+    font-weight: normal;
+  }
+  .pagemenu3 .divider1 {
+    height: 7px;
+    width: 25%;
+  }
+  .pagemenu3 .divider2 {
+    height: 7px;
+    width: 25%;
   }
 }
-/* RESOLUTION MOBILE */
-@media screen and (max-width: 639px) {
+/* RESOLUTION */
+@media screen and (max-width: 1980px) {
   .pm {
-    padding-bottom: 10%;
+    margin: auto;
+    padding: 4% 0;
+    width: 450px;
   }
 
   .mainmenu {
@@ -325,33 +406,56 @@
     width: 100%;
   }
 
+  .divider1, .divider2 {
+    width: 27%;
+    height: 15px;
+    align-self: center;
+  }
+
+  .entrees {
+    margin-top: 6%;
+  }
+
   .entrees, .plats, .desserts {
     display: flex;
     width: 100%;
   }
   .entrees p, .plats p, .desserts p {
-    width: 40%;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
-  .divider {
-    width: 25%;
-    height: 5px;
-    margin: 25px 10% 0 10%;
-    align-content: space-around;
+    width: 80%;
+    text-decoration: none;
+    position: relative;
+    line-height: 20px;
+    padding: 0 10px;
     text-align: center;
-    border: 5px solid grey;
+    font-size: 0.9em;
+  }
+  .entrees p:after, .plats p:after, .desserts p:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition: width 1s ease-in, background-color 1s ease-out;
+  }
+  .entrees p:hover:after, .plats p:hover:after, .desserts p:hover:after {
+    width: 100%;
+    left: 0%;
+    background: black;
   }
 
   ul {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px 0 20px;
+    margin: 0;
+    font-family: "Kalam", cursive;
   }
   ul li {
     display: flex;
     justify-content: space-between;
-    font-size: 1em;
+    font-size: 0.7em;
+    margin-bottom: 4%;
+    padding: 0 3%;
   }
 
   .pagemenu4 {
@@ -359,11 +463,18 @@
   }
   .pagemenu4 article {
     font-family: "Nanum Pen Script", cursive;
-    font-size: 0.85em;
+    font-size: 0.8em;
+  }
+  .pagemenu4 h2 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 2em;
+    background: -webkit-linear-gradient(left, #005700, #81ff81);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
-/* RESOLUTION MOBILE */
-@media screen and (max-width: 639px) {
+/* RESOLUTION */
+@media screen and (max-width: 1980px) {
   body {
     margin: 0;
     padding: 0;
@@ -385,7 +496,7 @@
   .container .menu a, .container .menub a {
     font-size: 1em;
     display: inline-block;
-    height: 300px;
+    height: 350px;
     position: relative;
     transition: all 0.3s ease-in-out;
     transform: scale(1);
@@ -396,11 +507,10 @@
     opacity: 0.7;
   }
   .container .part {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     padding-top: 40%;
+  }
+  .container .part1 {
+    padding-top: 25%;
   }
   .container .menu {
     background-color: #ffccccc4;
@@ -413,6 +523,7 @@
   }
   .container .menu, .container .menub {
     width: 40%;
+    max-width: 220px;
     height: 250px;
     margin-top: 5%;
     box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.548);
@@ -440,14 +551,14 @@
     margin-top: 10%;
   }
   .container .menu a .menu1 .gradient, .container .menub a .menu1 .gradient {
-    font-size: 50px;
-    background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
+    font-size: 40px;
+    background: -webkit-gradient(linear, left bottom, right bottom, from(#9b0d0d), to(#ffb300));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .container .menu a .menu1 h4, .container .menub a .menu1 h4 {
-    font-family: "Ma Shan Zheng";
-    font-size: 1.5em;
+    font-family: "Devonshire", cursive;
+    font-size: 1.8em;
     color: black;
   }
   .container .menu a .menu1 h5, .container .menub a .menu1 h5 {
@@ -477,13 +588,19 @@
     margin-top: 10%;
   }
   .container .menu a .menu2 h4, .container .menub a .menu2 h4 {
-    font-family: "Great Vibes", cursive;
+    font-family: "Croissant One", cursive;
+    font-size: 0.8em;
   }
   .container .menu a .menu2 h5, .container .menub a .menu2 h5 {
     color: orangered;
   }
   .container .menu a .menu3, .container .menub a .menu3 {
     text-align: center;
+  }
+  .container .menu a .menu3 .degrade, .container .menub a .menu3 .degrade {
+    background: -webkit-gradient(linear, left top, right bottom, from(blue), to(#a8a8fd));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .container .menu a .menu3 .part, .container .menub a .menu3 .part {
     width: 100%;
@@ -537,7 +654,6 @@
   }
 
   .soon {
-    font-size: 2em;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: #009973;
     width: 50%;
@@ -546,10 +662,12 @@
     margin: 5%;
     border-radius: 10px;
     color: #ffc14d;
+    max-height: 10%;
   }
   .soon h6 {
     padding: 4%;
     margin: 0;
+    font-size: 150%;
   }
   .soon .animsoon span {
     animation-name: dot;
@@ -564,144 +682,11 @@
     animation-delay: 0.4s;
   }
 }
-/* LANDSCAPE */
-@media screen and (min-width: 640px) and (max-width: 1900px) {
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
+/* Resolution de transition*/
+@media screen and (min-width: 659px) and (max-width: 880px) {
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 5%;
-  }
-  .container .menu, .container .menub {
-    width: 30%;
-    height: 300px;
-    margin: 4%;
-    border: 2px solid black;
-    text-align: center;
-  }
-  .container .menu .part, .container .menub .part {
-    width: 100%;
-    height: 100%;
-  }
-  .container .menu h4, .container .menub h4 {
-    font-size: 1.3em;
-    margin: 0;
-  }
-  .container .menu h5, .container .menub h5 {
-    font-size: 1.5em;
-    margin-top: 10%;
-  }
-  .container .menu .menu1, .container .menub .menu1 {
-    text-align: center;
-  }
-  .container .menu .menu1 .part, .container .menub .menu1 .part {
-    width: 100%;
-    height: 100%;
-  }
-  .container .menu .menu1 h4, .container .menub .menu1 h4 {
-    font-size: 1.3em;
-    margin: 0;
-  }
-  .container .menu .menu1 h5, .container .menub .menu1 h5 {
-    font-size: 1.5em;
-    margin-top: 10%;
-  }
-  .container .menu .menu1 .gradient, .container .menub .menu1 .gradient {
-    font-size: 50px;
-    background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .container .menu .menu1 h4, .container .menub .menu1 h4 {
-    font-family: "Ma Shan Zheng", cursive;
-    font-size: 1.8em;
-  }
-  .container .menu .menu1 h5, .container .menub .menu1 h5 {
-    font-family: "Nanum Pen Script", cursive;
-    font-size: 2em;
-  }
-  .container .menu .menu2, .container .menub .menu2 {
-    text-align: center;
-  }
-  .container .menu .menu2 .part, .container .menub .menu2 .part {
-    width: 100%;
-    height: 100%;
-  }
-  .container .menu .menu2 h4, .container .menub .menu2 h4 {
-    font-size: 1.3em;
-    margin: 0;
-  }
-  .container .menu .menu2 h5, .container .menub .menu2 h5 {
-    font-size: 1.5em;
-    margin-top: 10%;
-  }
-  .container .menu .menu2 h4, .container .menub .menu2 h4 {
-    font-family: "Great Vibes", cursive;
-  }
-  .container .menu .menu2 .degrade1, .container .menub .menu2 .degrade1 {
-    background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .container .menu .menu3, .container .menub .menu3 {
-    text-align: center;
-  }
-  .container .menu .menu3 .part, .container .menub .menu3 .part {
-    width: 100%;
-    height: 100%;
-  }
-  .container .menu .menu3 h4, .container .menub .menu3 h4 {
-    font-size: 1.3em;
-    margin: 0;
-  }
-  .container .menu .menu3 h5, .container .menub .menu3 h5 {
-    font-size: 1.5em;
-    margin-top: 10%;
-  }
-  .container .menu .menu3 h4, .container .menub .menu3 h4 {
-    font-family: "Dancing Script", cursive;
-  }
-  .container .menu .menu3 h5, .container .menub .menu3 h5 {
-    font-family: "Nanum Pen Script", cursive;
-    font-size: 1.5em;
-  }
-  .container .menu .menu4 .degrade2, .container .menub .menu4 .degrade2 {
-    font-size: 1.3em;
-    background: -webkit-linear-gradient(white, #5a0000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .container .menu .menu4 h4, .container .menub .menu4 h4 {
-    font-family: "Kaushan Script", cursive;
-  }
-  .container .menu .menu4 h5, .container .menub .menu4 h5 {
-    font-family: "Nanum Pen Script", cursive;
-    font-size: 1.5em;
-  }
-
-  .soon {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    background-color: #009973;
-    width: 50%;
-    align-self: center;
-    text-align: center;
+    width: 600px;
     margin: auto;
-    padding: 0;
-    border-radius: 10px;
-    color: #ffc14d;
   }
 }
 

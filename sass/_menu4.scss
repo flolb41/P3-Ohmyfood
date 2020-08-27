@@ -1,6 +1,6 @@
-/* RESOLUTION MOBILE */
+/* RESOLUTION */
 
-@media screen and (max-width: 639px)
+@media screen and (max-width: 1980px)
 {
     @include pagemenu();
     .pagemenu4
@@ -8,8 +8,16 @@
         background-color: $colbkm4;
         article
         {
-        font-family: 'Nanum Pen Script', cursive;
-        font-size: 0.85em;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 0.8em;
+        }
+        h2
+        {
+            font-family: $fontm4;
+            font-size: 2em;
+            background: -webkit-linear-gradient(left, rgb(0, 87, 0),rgb(129, 255, 129));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }

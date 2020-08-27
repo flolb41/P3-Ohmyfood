@@ -1,15 +1,16 @@
-@import "fonts";
-@import "variables";
-@import "mixin";
-/* RESOLUTION MOBILE */
+/* RESOLUTION */
 
-@media screen and (max-width: 639px)
+@media screen and (max-width: 1980px)
 {
     @include pagemenu();
     .pm
     {
         background-color: $colbkm1;
-        font-family: 'Nanum Pen Script', cursive;
+        font-family: $fontmenu;
+        p
+        {
+            font-weight: bold;
+        }
         .gradient {
             font-size: 50px;
             background: -webkit-gradient(linear, left bottom, right bottom, from( red), to(orange));
@@ -19,14 +20,23 @@
         }
         h2
         {
-            font-family: 'Ma Shan Zheng', cursive;
+            font-family: $fontm1;
             font-size: 2em;
             font-weight: normal;
             margin: 0;
         }
+        .divider1
+        {
+            margin-left: 25px;
+
+        }
+        .divider2
+        {
+            margin-right: 25px;
+        }
     .foot span
     {
-        font-family: 'Ma Shan Zheng', cursive;
+        font-family: $fontm1;
         font-size: 1.5em;
         color: black;
     }
