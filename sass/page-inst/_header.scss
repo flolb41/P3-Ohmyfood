@@ -1,6 +1,7 @@
-/* RESOLUTION */
 
-@media screen and (max-width: 1980px)
+/* RESOLUTION STANDARD */
+
+@media screen  and (max-width: 1980px)
 {
     header
     {
@@ -8,7 +9,7 @@
        color: $charcolor;
        font-size: larger;
        text-align: center;
-       padding: 1%;
+       width: 100%;
        h1{
           font-family: $fontpage;
          }

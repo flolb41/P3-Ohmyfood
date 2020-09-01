@@ -20,15 +20,16 @@
     .pm
     {
         margin: auto;
-        padding: 4% 0;
-        width: 450px;
+        padding: 0;
+        width: 100%;
+        max-width: 500px;
     }
     .mainmenu
     {
         display: flex;
         flex-direction: column; 
         text-align: center;
-        margin: 0% 5% 20% 5%;
+        margin-bottom: 30%;
     }
     main p
     {
