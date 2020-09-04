@@ -25,14 +25,26 @@
         .entrees, .color1
         {
             color: rgb(255, 123, 0);
+            p:hover:after
+            {
+                background: rgb(255, 123, 0);
+            }
         }
         .plats, .color2
         {
             color: rgb(144, 45, 83);
+            p:hover:after
+            {
+                background: rgb(144, 45, 83);
+            }
         }
         .desserts, .color3
         {
             color: rgb(135, 71, 187);
+            p:hover:after
+            {
+                background: rgb(135, 71, 187);
+            }
             
         }
     }

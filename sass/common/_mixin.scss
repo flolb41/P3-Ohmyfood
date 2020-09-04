@@ -73,9 +73,7 @@
         p:hover:after
         {
             width: 100%;
-            left: 0%;
-            background: black;
-            
+            left: 0%; 
         }
     }
     ul
@@ -100,9 +98,9 @@
     { 
         a
         {
-            font-size: 1.0em;
+            font-size: 1.3em;
             display: inline-block;
-            height: 350px;
+            height: 300px;
             position: relative;
             transition: all 0.3s ease-in-out;
             transform: scale(1);

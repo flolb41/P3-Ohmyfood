@@ -178,7 +178,6 @@
   .entrees p:hover:after, .plats p:hover:after, .desserts p:hover:after {
     width: 100%;
     left: 0%;
-    background: black;
   }
 
   ul {
@@ -221,6 +220,9 @@
   }
   .pm .divider2 {
     margin-right: 25px;
+  }
+  .pm .entrees p:hover:after, .pm .plats p:hover:after, .pm .desserts p:hover:after {
+    background: black;
   }
   .pm .foot span {
     font-family: "Devonshire", cursive;
@@ -284,7 +286,6 @@
   .entrees p:hover:after, .plats p:hover:after, .desserts p:hover:after {
     width: 100%;
     left: 0%;
-    background: black;
   }
 
   ul {
@@ -322,11 +323,20 @@
   .pagemenu2 .entrees, .pagemenu2 .color1 {
     color: #ff7b00;
   }
+  .pagemenu2 .entrees p:hover:after, .pagemenu2 .color1 p:hover:after {
+    background: #ff7b00;
+  }
   .pagemenu2 .plats, .pagemenu2 .color2 {
     color: #902d53;
   }
+  .pagemenu2 .plats p:hover:after, .pagemenu2 .color2 p:hover:after {
+    background: #902d53;
+  }
   .pagemenu2 .desserts, .pagemenu2 .color3 {
     color: #8747bb;
+  }
+  .pagemenu2 .desserts p:hover:after, .pagemenu2 .color3 p:hover:after {
+    background: #8747bb;
   }
 }
 /* RESOLUTION */
@@ -384,7 +394,6 @@
   .pagemenu3 .entrees p:hover:after, .pagemenu3 .plats p:hover:after, .pagemenu3 .desserts p:hover:after {
     width: 100%;
     left: 0%;
-    background: black;
   }
   .pagemenu3 ul {
     display: flex;
@@ -418,6 +427,9 @@
   .pagemenu3 .divider2 {
     height: 7px;
     width: 25%;
+  }
+  .pagemenu3 .entrees p:hover:after, .pagemenu3 .plats p:hover:after, .pagemenu3 .desserts p:hover:after {
+    background: blue;
   }
 }
 /* RESOLUTION */
@@ -476,7 +488,6 @@
   .entrees p:hover:after, .plats p:hover:after, .desserts p:hover:after {
     width: 100%;
     left: 0%;
-    background: black;
   }
 
   ul {
@@ -508,6 +519,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .pagemenu4 .entrees p:hover:after, .pagemenu4 .plats p:hover:after, .pagemenu4 .desserts p:hover:after {
+    background: #81ff81;
+  }
 }
 /* RESOLUTION MOBILE */
 @media screen and (max-width: 360px) {
@@ -521,9 +535,9 @@
     flex-direction: column;
   }
   .container .menu a, .container .menub a {
-    font-size: 1em;
+    font-size: 1.3em;
     display: inline-block;
-    height: 350px;
+    height: 300px;
     position: relative;
     transition: all 0.3s ease-in-out;
     transform: scale(1);
@@ -561,8 +575,7 @@
     background-color: #f2f2f2;
   }
   .container .menu, .container .menub {
-    width: 75%;
-    margin: auto;
+    max-width: 75%;
     height: 300px;
     margin-top: 5%;
     box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.548);
@@ -744,9 +757,9 @@
     justify-content: space-around;
   }
   .container .menu a, .container .menub a {
-    font-size: 1em;
+    font-size: 1.3em;
     display: inline-block;
-    height: 350px;
+    height: 300px;
     position: relative;
     transition: all 0.3s ease-in-out;
     transform: scale(1);
@@ -773,8 +786,8 @@
   }
   .container .menu, .container .menub {
     width: 40%;
-    max-width: 220px;
-    height: 250px;
+    max-width: 300px;
+    height: 350px;
     margin-top: 5%;
     box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.548);
   }
@@ -801,7 +814,7 @@
     margin-top: 10%;
   }
   .container .menu a .menu1 .gradient, .container .menub a .menu1 .gradient {
-    font-size: 40px;
+    font-size: 50px;
     background: -webkit-gradient(linear, left bottom, right bottom, from(#9b0d0d), to(#ffb300));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -906,10 +919,11 @@
   .soon {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     background-color: #009973;
-    width: 50%;
+    width: 60%;
     align-self: center;
     text-align: center;
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 50px;
     border-radius: 10px;
     color: #ffc14d;
     max-height: 10%;

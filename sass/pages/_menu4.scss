@@ -19,5 +19,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .entrees, .plats, .desserts
+        {
+            p:hover:after
+            {
+                background: rgb(129, 255, 129);
+            }
+        }
     }
 }
